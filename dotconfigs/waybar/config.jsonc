@@ -24,7 +24,7 @@
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
-        "persistent_workspaces": {
+        "persistent-workspaces": {
             "1": [],
             "2": [],
             "3": [],
@@ -57,7 +57,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{: %R   %d/%m}",
+        "format": "{:%R %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "pulseaudio": {
@@ -80,8 +80,8 @@
     },
     "pulseaudio#microphone": {
         "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " Muted",
+        "format-source": "\udb80\udf6c {volume}%",
+        "format-source-muted": "\udb80\udf6d Muted",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
